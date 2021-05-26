@@ -22,4 +22,4 @@ export default (userName) => {
   } while (i < 3);
 
   return `Congratulations, ${userName}!`;
-};
+}
