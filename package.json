@@ -1,7 +1,8 @@
 {
   "name": "@hexlet/code",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/vzletit/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/vzletit/frontend-project-lvl1/actions)",
@@ -21,10 +22,11 @@
   "homepage": "https://github.com/vzletit/frontend-project-lvl1#readme",
   "type": "module",
   "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.3",
-    "lodash": "^4.17.21",
-    "readline-sync": "^1.4.10"
+    "eslint-plugin-import": "^2.23.3"
   }
 }
