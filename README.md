@@ -4,3 +4,6 @@
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 [![asciicast](https://asciinema.org/a/3TVVQz7zVuZx8tYCQU4uFO8Vi.svg)](https://asciinema.org/a/3TVVQz7zVuZx8tYCQU4uFO8Vi)
+[![asciicast](https://asciinema.org/a/vQ6NVLoOLgy5jXNsejWIsvCgE.svg)](https://asciinema.org/a/vQ6NVLoOLgy5jXNsejWIsvCgE)
+[![asciicast](https://asciinema.org/a/FXUn4TTx0S1WfNsrQXyhTFj2a.svg)](https://asciinema.org/a/FXUn4TTx0S1WfNsrQXyhTFj2a)
+[![asciicast](https://asciinema.org/a/os785F8syZdy6Rl2NNui8Q3gW.svg)](https://asciinema.org/a/os785F8syZdy6Rl2NNui8Q3gW)

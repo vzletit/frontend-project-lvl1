@@ -1,25 +1,17 @@
-import readlineSync from 'readline-sync';
+import theGame from './index.js';
 
-export default (userName) => {
-  const isNumEvenYesNo = (num) => ((num % 2 === 0) ? 'yes' : 'no');
+const taskMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+export default () => {
+  const questionsArray = [];
+  for (let i = 0; i < 3; i += 1) {
+    const question = Math.floor(Math.random() * 100);
+    const rightAnswer = (question % 2 === 0) ? 'yes' : 'no';
+    questionsArray.push({
+      question,
+      rightAnswer,
+    });
+  }
 
-  let i = 0;
-  const random = (maxNum) => Math.floor(Math.random() * maxNum);
-
-  do {
-    const num = random(100);
-    console.log(`Question: ${num}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (userAnswer === isNumEvenYesNo(num)) {
-      i += 1;
-      console.log('Correct!');
-    } else {
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${isNumEvenYesNo(num)}'.\nLet's try again, ${userName}!`;
-    }
-  } while (i < 3);
-
-  return `Congratulations, ${userName}!`;
-}
+  return theGame(questionsArray, taskMessage);
+};
