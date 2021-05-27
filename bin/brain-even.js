@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import evenNotEven from '../src/even-not-even.js';
+import brainEven from '../src/brain-even.js';
 
-console.log(evenNotEven());
+console.log(brainEven());

@@ -1,13 +1,13 @@
 import theGame from './index.js';
+import random from './functions.js';
 
 const taskMessage = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
   const questionsArray = [];
   for (let i = 0; i < 3; i += 1) {
-    const random = (limit) => Math.floor(Math.random() * limit);
-    const num1 = random(100);
-    const num2 = random(30);
+    const num1 = random(1, 100);
+    const num2 = random(1, 30);
     const question = `${num1} ${num2}`;
     const GCD = (a, b) => {
       if (!b) {
