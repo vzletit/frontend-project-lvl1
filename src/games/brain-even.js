@@ -1,5 +1,5 @@
-import theGame from './index.js';
-import random from './functions.js';
+import theGame from '../index.js';
+import random from '../random.js';
 
 const taskMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 

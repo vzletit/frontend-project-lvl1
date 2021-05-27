@@ -1,5 +1,5 @@
-import theGame from './index.js';
-import random from './functions.js';
+import theGame from '../index.js';
+import random from '../random.js';
 
 const taskMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
