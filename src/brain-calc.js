@@ -11,7 +11,17 @@ export default () => {
     const signsArray = ['-', '+', '*'];
     const sign = signsArray[random(0, signsArray.length - 1)];
     const question = `${a} ${sign} ${b}`;
-    const rightAnswer = String(eval(question));
+    let rightAnswer = '';
+    switch (sign) {
+      case '-':
+        rightAnswer = String(a - b); break;
+      case '+':
+        rightAnswer = String(a + b); break;
+      case '*':
+        rightAnswer = String(a * b); break;
+      default:
+        break;
+    }
     questionsArray.push({
       question,
       rightAnswer,
